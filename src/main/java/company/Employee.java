@@ -2,7 +2,7 @@ package company;
 
 public class Employee {
     private  String name;
-    protected   int salary;
+    protected int salary;
 
     public Employee(String name, int salary) {
         this.name = name;

@@ -1,0 +1,500 @@
+Index: src/main/java/vehicles/Car.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/vehicles/Car.java	(date 1587198461405)
++++ src/main/java/vehicles/Car.java	(date 1587198461405)
+@@ -0,0 +1,23 @@
++package vehicles;
++
++public class Car {
++    private String brand;
++    private  String model;
++
++    public Car(String brand, String model) {
++        this.brand = brand;
++        this.model = model;
++    }
++
++    public void show(){
++        System.out.println("To jest"+brand+" model"+model);
++    }
++
++    public String getModel() {
++        return model;
++    }
++
++    public void setModel(String model) {
++        this.model = model;
++    }
++}
+Index: .idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/uiDesigner.xml	(date 1587198302006)
++++ .idea/uiDesigner.xml	(date 1587198302006)
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- pom.xml	(date 1587199060025)
++++ pom.xml	(date 1587199060025)
+@@ -0,0 +1,29 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>org.example</groupId>
++    <artifactId>java-zaawansowana</artifactId>
++    <version>1.0-SNAPSHOT</version>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.8.1</version>
++                <configuration>
++                    <source>13</source>
++                    <target>13</target>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++
++
++
++
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.gitignore	(date 1587202647409)
++++ .idea/.gitignore	(date 1587202647409)
+@@ -0,0 +1,2 @@
++# Default ignored files
++/workspace.xml
+\ No newline at end of file
+Index: src/main/java/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/Main.java	(date 1587199217062)
++++ src/main/java/Main.java	(date 1587199217062)
+@@ -0,0 +1,5 @@
++public class Main {
++    public static void main(String[] args) {
++
++    }
++}
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1587198902897)
++++ .idea/misc.xml	(date 1587198902897)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="13" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/main/java/vehicles/CompanyName.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/vehicles/CompanyName.java	(date 1587201028212)
++++ src/main/java/vehicles/CompanyName.java	(date 1587201028212)
+@@ -0,0 +1,4 @@
++package vehicles;
++
++public class CompanyName {
++}
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1587202664433)
++++ .idea/vcs.xml	(date 1587202664433)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/main/java/company/Employee.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/company/Employee.java	(date 1587201476751)
++++ src/main/java/company/Employee.java	(date 1587201476751)
+@@ -0,0 +1,19 @@
++package company;
++
++public class Employee {
++    private  String name;
++    private  int salary;
++
++    public Employee(String name, int salary) {
++        this.name = name;
++        this.salary = salary;
++    }
++
++    public int getSalary() {
++        return salary;
++    }
++
++    public void show(){
++        System.out.println("Jestem " + name + " i zarabiam " + salary);
++    }
++}
+Index: src/main/java/company/Manager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/company/Manager.java	(date 1587201986467)
++++ src/main/java/company/Manager.java	(date 1587201986467)
+@@ -0,0 +1,30 @@
++package company;
++
++public class Manager extends Employee {
++    private  int bonus;
++
++    public Manager(String name, int salary) {
++        super(name, salary);
++        this.bonus = 0;
++    }
++
++    public Manager(String name, int salary, int bonus) {
++        super(name, salary);
++        this.bonus = bonus;
++    }
++
++    public void makeSpeech(){
++        System.out.println("Przemowa motywująca");
++    }
++
++    public void makeSpeech(String additionalMessage){
++        this.makeSpeech();
++        System.out.println(additionalMessage);
++    }
++
++
++    @Override
++    public int getSalary() {
++        return super.getSalary() + bonus;
++    }
++}
+Index: java-zaawansowana.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- java-zaawansowana.iml	(date 1587196145658)
++++ java-zaawansowana.iml	(date 1587196145658)
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+Index: src/main/java/VehiclesMain.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/VehiclesMain.java	(date 1587199127737)
++++ src/main/java/VehiclesMain.java	(date 1587199127737)
+@@ -0,0 +1,22 @@
++import vehicles.Car;
++
++public class VehiclesMain {
++    public static void main(String[] args) {
++        Car[] cars = new Car[5];
++        cars[0]= new Car("BMW","e46");
++        //CTR D
++        cars[1]= new Car("Fiat","Punto");
++        cars[2]= new Car("Mercedes","AMG");
++        cars[3]= new Car("Audi","A6");
++        cars[4]= new Car("Subaru","Impreza WRX");
++
++        cars[2].setModel("A7");
++
++        for (Car myCars: cars) {
++            myCars.show();
++        }
++
++
++
++    }
++}
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1587198941813)
++++ .idea/compiler.xml	(date 1587198941813)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="java-zaawansowana" />
++      </profile>
++    </annotationProcessing>
++    <bytecodeTargetLevel target="13" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git target/classes/vehicles/Car.class target/classes/vehicles/Car.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..7cc9b92c3ce0125c8d019a2c19b0d776a4a250c6
+GIT binary patch
+literal 1288
+zc$|$??M@Rx6g^YgZo6(Nlmg-h6a{SyQojXj_(2n*Nl}v$jPcjBozR8tPP043@FqTn
+z8qkCvK7bEpytBJ0U)7LJckbLh_nbR-?(OeCC%*u!p=u(A5d(1x2_zZD_V@v>INaT>
+zyld`>mSRZ0vRzxPGmI2VJ87hlHegz~28+Qu5FNYa2)|O}9z&w(aktHotDn*|lxMrU
+zRUJ5LA*-VjUD*~+8so?rn6Qw?<T>TWp|3=j1ZAJ}Cqpt@R^AhnB0j;p)f}ZiZQ(j*
+z7^b^?U(}@A;_8E~I%N5ZyUJ%+End##vZr*}W#T4o8Mtj>7IO>}LsDQcdV1%$l;aSc
+z(hkG@tLYOmUZa{YWb3vo-uAmq;cfG#BXligi#t2qv-Li5##P6r<BitO*1t-Azau|0
+zq;`ec(lutt7l)jV5dHvRHe}yxiA`G*r-)}o<LN>+q*T80cyCLnj%@qcBvwpR@X){`
+zUHQih3#Zh!dm#5kq!3=lCT}U}9Ws15TZRZ2lD?*Xq4XE(QttPALu&J{!0p4H7y|!P
+zzu3U%Za1Q+amQ)cN>o#LN;Th>g+1XbRtWl%QCq)pUE$Rn?)$<w@Pc9SO8FaDW0?Iv
+zlm;pUW1dDLMr|CUho&j8vcVb$4G9YLo~PYMJ)*Q`%Rj-&OUE$E%g4xk3j*%YJ4XQk
+z4Y3|hdPZU5E_n)J7#6Sy1eTUzfu)6FWZy$FlGz}%{+9oavGNg#93gXpDc}cgoNAdt
+z${9?Miq;7E@{tC0Jc<!tg;xD7p^3f@2$F$w{7i6S5M07s6ucf(h0yxEnTzt16f+et
+lOogby5tG5e=&u9iAZ7{6w5G`OfPPQ#EZ|^xj#a$G%wJW{A;<s#
+
+diff --git target/classes/Main.class target/classes/Main.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..8553bff78e1b83abdfbe889ef5633cf6e53a0e5a
+GIT binary patch
+literal 355
+zc${re!A`<J5Pbusr4>Pec;^P1*t5ZSG4WLK0O^I(wr<LjvQ5_Fe|aL|;0N$ghS`-w
+z6WznSyqWjjWcKj2{{(P{VT1;n0lW@c@Cg@d@h;+0=puf})-taN{=L$wejqf*lQck^
+z;5`ea86K-wN$4d?%h`65NwW}H$(?>u<)Tc5QI?;YUcFLpoR(Pgl=;SmT#c8>&(3*m
+zlrE-|l;^?}tRMU{CPedUYjXLdY;tH5Z><U=1bmNu4UoNvYsf5SB*xbD4)o#15m(<e
+i31?h8-vY*S#t>cfPUah@!C#~I%gA4cONV`@8XN(b06pRW
+
+diff --git target/classes/vehicles/CompanyName.class target/classes/vehicles/CompanyName.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..d8ba17c1f4ae0c3c6ca1db8e05b830d171ea0e21
+GIT binary patch
+literal 276
+zc${rcO%K696r88kQeTaTyBiLA7UCjtYB&)0ZEaZThg3=YEGLPBAK*uc*K%;Mo6PLY
+zo41+g>;3>Rgl(Y!&4gY>5eC8Di?eV75pA7?x0ilOFvcoU>4czldutOVLhCGd$`9nx
+zna1HkM3=b;B|)FY8>WV<A~`>Wo=jH43)pG8u`hzPNK~f3rk?K9k<fPkeKsOk%lMS|
+za;CDd{WBY6714po&9g&%xjSQ-m6L0r*uR0U{3yU;G;&izg|YexFxT?+dY)>$0hw(%
+A_y7O^
+
+diff --git target/classes/VehiclesMain.class target/classes/VehiclesMain.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..b49810a5d012815d7fb1bdef47059df963ac6a99
+GIT binary patch
+literal 904
+zc${rgU2hUm5Iq-m*;}BcT?(~owe_n|5ENUmpGj>}V`SBcp&Fhpuz{_xG|N(>&;Al$
+zeC|t|XzUO0xA<&)vd+D2B2fsL*)uce<jmxL|NZ3@z$!Mw2q0)ci$X_;VRBy_ihM`7
+zt^D))zTNN{LK}|j_*)FYRJv+_Gei&Vw$td?{rrybIKtF=WbJW8>BC+whGAer>ctoq
+zQ{}&k72k8**82aIbd_U@LECkN&k<+PUkqHo$B|&*mhCm{rrqb5A^mOZF~=;;ZV#Fc
+z#}$Uac9CO_d{zc^;SD&hGen+r4?O#WnBRN(nqxr@m87kkQQX3967Ac*)oa=vhQtVm
+z>8c!Fj3Om(qV?OocLtVd@#@9mmT+8Z?2rUQtn9e<vq86Rd#^;jLlv{!Ylu!&c#gyu
+zMa^$JeTIqhu*f>qyGksXs*N&2dv)K_nH6*R?vg3I7S-b;h}3K-QmpnbYrNu%##>7q
+zC|?Fv43rqcmEM5vyz5A-Q^OW>QXC6N(@T-R0GNC$6f=bKlo@4x=>+UZwX+mMsu;vw
+ziqZ1{<Y*We!#&);ApfMf5amAq2BVw_eueSI95W*)WHO^EG-;X&=?YDoNrgfRT{15#
+zWGHmiymmfWFz1hPBV%Pxw}M42q0N25bT*+C*7RBZ7<WEu?DN@=BV|uo%^{-f$(`b$
+z*FqNa2xF7#Pce=PVrXF!9m*aOYNdJNwun){1B$c&ma(E#Toh5F^&S$MLEsEE=mu5|
+RtkIv*A$}oA?R9mjjXy#)v@ZYv
+
+diff --git target/classes/company/Employee.class target/classes/company/Employee.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..dfb65f39afae7ebac193f6c1bbd91b314a5d1119
+GIT binary patch
+literal 1174
+zc$|$>ZBG+H5Pr5TJ$ha#ls8etq9C*=^<D9dA7~)f)R&|LWBjx&8+vee+uUt2^_Tb~
+z{Gt&}_}~xlM;T|Yr&U^wx!lgo&df6}JM-=P$yWdyuuUY8G?20|f;7YU0YBnpm;3wW
+z=Zyo=R1E2dj_;^P49V5vZU&>s7%(lIfkoy`>9x7vEpK^kS9XP9Ncr3&lCSlV>MC&j
+zeOvpES;%3WKtt~Gpv%Cj8RRi(V9LTYX8y>a-VK%TD6s5M9@9NUN0wg@oFY)cJv&cj
+zoV75Aa}2W{KNJ<|H@SN0s1|Xd;=T$QR#peosTK$COw8kgfdvZ}QDB%H5|P1ZYsvK~
+zr6I7zU51&V;Yg9H$USOKuIBjSS;uRLV23x{s9mzj-CZ6yT8=MMs^x@Qce=|qLuOy7
+zdfY>Lm?~L^E%}DQtjkW&6x)tQ$o}+L*ZEL$H>Fge3V8deP%XI^=F(U<QO0!xH*^<o
+zGA#8|cl;xHDB=owjos!=C3Vnuzt<QW_COzVf6o=+QccRkPTL-A#oruvx@|GU{B`a0
+zP};>ohzfVzx}$_Wire%uPlTSG0xLL$w>;nthm*iyRefIs6_<yh2o2n0SpKgn3~Vqg
+z{M(eKx@U|<n)Cz>W`aK2lZd0SCz=GKMO&ov5=pQ0@)6CIzJQh1j$xGMkCFWlIb5bQ
+zj})D>o_g)*8-s}@x+(PBu#77}#OW|B;&h+{@he!3!<30?-AL&ZvhRO^r=!bk1lV&P
+zi2)gkkyblzMmYmhA2C7xhQ>I-EbtlU`-z%Sy%U(El>2y7F<ug-$Z`!=iH?%)8vVC$
+NC-P*ti~D$hxgVmg5M=-W
+
+diff --git target/classes/company/Manager.class target/classes/company/Manager.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..ad42e83d17e2dc9be6f1434a5cfaff74867d985c
+GIT binary patch
+literal 970
+zc$|Hb&u<bz6vw~AuVvRM6k0$lRa$?+qUB;@491JmNJ33h3?~l`Friy_cgV8X;NAbm
+zi$>eTgC|e^QO38!+M*Ien7lXh=JWl&dHdt%*KYtGqGch0q=6Ji8X1Q5q4FlepSPZR
+z6IacpWXL>nd?$R&P_B26#aq#Gg+Fff!ocyz?M|a_A`8=i#c>IoA^)4OFMKhU0YiGA
+z{MnR&bxh=tH?Yo8K#|0jaPw&>J%*&3g$$*IkfT}$q!N;r6ka=vO@_^b;GOi;iKuxh
+zoS)2&zrP;}3uROcT;{lfEryL1w;7B{l(|0PS2WV-ThvFDV;k2PEKj_Vy@`~=Bl1*_
+z4il(x>|mF{9LumLToKImS%)F@M2+aB@?FQ5FJ|6A1~0|HrJZ6|4TakmffMENW-2^#
+z=s61Azh0_MN51g%wSWB49Hy~mWz`&L5QG$?krO(~7w*2CP6<k_^wcaE%4bd_&10#(
+z2teIrsV#ufO0%OVO)-53wBDfX5J~z0+-_FS!0hA~7#}H5;3lm(eP&Q~mTsH4MOkf8
+zkK4Ed=%|hc(W1zve?s${G5-}+r<VBJEBKuFYsAlKzP+gb4?l{cUXrv+ql}dvXl20s
+zgtg+vDM}YImcCS=CW=~uFA8Ic2(lGJo>Qe3uupN7K+Qim3%eyUSSAA%%__%+F6`db
+lc3Jcx#nk(;HOoH3b^9}n*B{QA8GTY+@@1X-x~Hr5egOxoq!s`G
+
