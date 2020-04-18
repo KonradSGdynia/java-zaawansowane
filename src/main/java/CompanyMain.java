@@ -14,5 +14,15 @@ public class CompanyMain {
         System.out.println("---");
 
         Employee[] employees = new Employee[3];
+
+        employees[0] = new Employee("Jan", 200);
+        employees[1] = new Employee("Ola", 250);
+        employees[2] = new Employee("Ala", 220);
+
+        for (Employee employee: employees) {
+            employee.show();
+        }
+
+
     }
 }
