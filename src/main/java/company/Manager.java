@@ -2,6 +2,7 @@ package company;
 
 public class Manager extends Employee {
     private  int bonus;
+    private  Secretary secretary;
 
     public Manager(String name, int salary) {
         super(name, salary);
@@ -14,7 +15,7 @@ public class Manager extends Employee {
     }
 
     public void makeSpeech(){
-        System.out.println("Przemowa motywująca");
+        System.out.println("Do pracy!");
     }
 
     public void makeSpeech(String additionalMessage){
@@ -27,5 +28,17 @@ public class Manager extends Employee {
     public int getSalary() {
        // return super.getSalary() + bonus;  gdy private
         return salary+bonus; // gdy protected
+    }
+
+    public void setSecretary(Secretary secretary) {
+        this.secretary = secretary;
+    }
+
+    public  void makeCall(String number){
+        if(this.secretary==null){
+            System.out.println("Nie umiem dzwonić!");
+        }else{
+            this.secretary.makeCall(number);
+        }
     }
 }
