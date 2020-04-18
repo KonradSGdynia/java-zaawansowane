@@ -25,6 +25,7 @@ public class Manager extends Employee {
 
     @Override
     public int getSalary() {
-        return super.getSalary() + bonus;
+       // return super.getSalary() + bonus;  gdy private
+        return salary+bonus; // gdy protected
     }
 }
